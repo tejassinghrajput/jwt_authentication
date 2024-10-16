@@ -1,0 +1,65 @@
+CRITICAL - 2024-10-16 04:42:13 --> ErrorException: Undefined variable $decodedData
+[Method: GET, Route: Admin]
+in APPPATH\Controllers\Api\v1\Admin.php on line 47.
+ 1 APPPATH\Controllers\Api\v1\Admin.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $decodedData', 'D:\\user-management\\app\\Controllers\\Api\\v1\\Admin.php', 47)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Api\v1\Admin->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\v1\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\user-management\\public\\index.php')
+CRITICAL - 2024-10-16 05:56:09 --> ParseError: syntax error, unexpected end of file
+[Method: POST, Route: admin/add]
+in APPPATH\Config\Routes.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('D:\\user-management\\public\\index.php')
+CRITICAL - 2024-10-16 05:56:16 --> ParseError: syntax error, unexpected end of file
+[Method: GET, Route: admin/add]
+in APPPATH\Config\Routes.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('D:\\user-management\\public\\index.php')
+CRITICAL - 2024-10-16 05:56:25 --> ErrorException: Undefined variable $id
+[Method: POST, Route: admin/add]
+in APPPATH\Controllers\Api\v1\Admin.php on line 144.
+ 1 APPPATH\Controllers\Api\v1\Admin.php(144): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'D:\\user-management\\app\\Controllers\\Api\\v1\\Admin.php', 144)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Api\v1\Admin->adminadd()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\v1\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\user-management\\public\\index.php')
+CRITICAL - 2024-10-16 06:33:32 --> Error: Call to undefined method App\Controllers\Api\v1\Login::validateJWT()
+[Method: GET, Route: user]
+in APPPATH\Controllers\Api\v1\Login.php on line 59.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Api\v1\Login->checkuser()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\v1\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('D:\\user-management\\public\\index.php')
+CRITICAL - 2024-10-16 06:34:48 --> ParseError: syntax error, unexpected token "=>", expecting ")"
+[Method: GET, Route: user]
+in APPPATH\Controllers\Api\v1\Login.php on line 61.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\user-management\\app\\Controllers\\Api\\v1\\Login.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Api\\v1\\Login')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Api\\v1\\Login')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Api\\v1\\Login', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\user-management\\public\\index.php')

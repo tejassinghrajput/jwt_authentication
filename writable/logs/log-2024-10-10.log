@@ -1,0 +1,1554 @@
+ERROR - 2024-10-10 04:09:54 --> mysqli_sql_exception: Duplicate entry 'bhavvvvnmckjvvya' for key 'username' in D:\xampp\htdocs\API\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 D:\xampp\htdocs\API\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ap...', 0)
+#1 D:\xampp\htdocs\API\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ap...')
+#2 D:\xampp\htdocs\API\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ap...')
+#3 D:\xampp\htdocs\API\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ap...', Array, false)
+#4 D:\xampp\htdocs\API\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\xampp\htdocs\API\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 D:\xampp\htdocs\API\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\xampp\htdocs\API\app\Controllers\Register.php(17): CodeIgniter\Model->insert(Array)
+#8 D:\xampp\htdocs\API\system\CodeIgniter.php(933): App\Controllers\Register->signup()
+#9 D:\xampp\htdocs\API\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#10 D:\xampp\htdocs\API\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\API\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\API\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp\htdocs\API\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 D:\xampp\htdocs\API\system\rewrite.php(44): require_once('D:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2024-10-10 04:09:54 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'bhavvvvnmckjvvya' for key 'username'
+[Method: POST, Route: register]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `api` (`username`, `password`, `email`) VALUES (:username:, :password:, :email:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Register.php(17): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Register->signup()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\API\\public\\index.php')
+CRITICAL - 2024-10-10 04:09:54 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'bhavvvvnmckjvvya' for key 'username'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `api` (`username`, `password`, `email`) VALUES (\'bhavvvvnmckjvvya\', \'12cvlkn34v5\', \'testlvkcingmcom\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `api` (`username`, `password`, `email`) VALUES (\'bhavvvvnmckjvvya\', \'12cvlkn34v5\', \'testlvkcingmcom\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `api` (`username`, `password`, `email`) VALUES (:username:, :password:, :email:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Register.php(17): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Register->signup()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\API\\public\\index.php')
+CRITICAL - 2024-10-10 04:09:54 --> [Caused by] mysqli_sql_exception: Duplicate entry 'bhavvvvnmckjvvya' for key 'username'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `api` (`username`, `password`, `email`) VALUES (\'bhavvvvnmckjvvya\', \'12cvlkn34v5\', \'testlvkcingmcom\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `api` (`username`, `password`, `email`) VALUES (\'bhavvvvnmckjvvya\', \'12cvlkn34v5\', \'testlvkcingmcom\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `api` (`username`, `password`, `email`) VALUES (\'bhavvvvnmckjvvya\', \'12cvlkn34v5\', \'testlvkcingmcom\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `api` (`username`, `password`, `email`) VALUES (:username:, :password:, :email:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Register.php(17): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Register->signup()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\API\\public\\index.php')
+CRITICAL - 2024-10-10 04:16:03 --> ErrorException: Undefined variable $usermodel
+[Method: POST, Route: register]
+in APPPATH\Controllers\Register.php on line 14.
+ 1 APPPATH\Controllers\Register.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usermodel', 'D:\\xampp\\htdocs\\API\\app\\Controllers\\Register.php', 14)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Register->signup()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\API\\public\\index.php')
+ERROR - 2024-10-10 04:17:11 --> mysqli_sql_exception: Unknown column 'tesctlvkcingmcom' in 'where clause' in D:\xampp\htdocs\API\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 D:\xampp\htdocs\API\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\API\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\API\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\API\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\API\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\API\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 D:\xampp\htdocs\API\app\Controllers\Register.php(13): CodeIgniter\BaseModel->first()
+#7 D:\xampp\htdocs\API\system\CodeIgniter.php(933): App\Controllers\Register->signup()
+#8 D:\xampp\htdocs\API\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#9 D:\xampp\htdocs\API\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\API\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\API\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\xampp\htdocs\API\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 D:\xampp\htdocs\API\system\rewrite.php(44): require_once('D:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2024-10-10 04:17:11 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tesctlvkcingmcom' in 'where clause'
+[Method: POST, Route: register]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `api`
+WHERE `tesctlvkcingmcom` IS NULL
+ LIMIT 1', [], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\Register.php(13): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Register->signup()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\API\\public\\index.php')
+CRITICAL - 2024-10-10 04:17:11 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tesctlvkcingmcom' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `api`
+WHERE `tesctlvkcingmcom` IS NULL
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `api`
+WHERE `tesctlvkcingmcom` IS NULL
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `api`
+WHERE `tesctlvkcingmcom` IS NULL
+ LIMIT 1', [], false)
+ 4 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Controllers\Register.php(13): CodeIgniter\BaseModel->first()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Register->signup()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\API\\public\\index.php')
+CRITICAL - 2024-10-10 04:17:11 --> [Caused by] mysqli_sql_exception: Unknown column 'tesctlvkcingmcom' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `api`
+WHERE `tesctlvkcingmcom` IS NULL
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `api`
+WHERE `tesctlvkcingmcom` IS NULL
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `api`
+WHERE `tesctlvkcingmcom` IS NULL
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `api`
+WHERE `tesctlvkcingmcom` IS NULL
+ LIMIT 1', [], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\Register.php(13): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Register->signup()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\API\\public\\index.php')
+ERROR - 2024-10-10 04:19:13 --> mysqli_sql_exception: Unknown column 'tesctlvkcingmcom' in 'where clause' in D:\xampp\htdocs\API\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 D:\xampp\htdocs\API\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\API\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\API\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\API\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\API\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\API\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 D:\xampp\htdocs\API\app\Controllers\Register.php(13): CodeIgniter\BaseModel->first()
+#7 D:\xampp\htdocs\API\system\CodeIgniter.php(933): App\Controllers\Register->signup()
+#8 D:\xampp\htdocs\API\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#9 D:\xampp\htdocs\API\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\API\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\API\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\xampp\htdocs\API\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 D:\xampp\htdocs\API\system\rewrite.php(44): require_once('D:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2024-10-10 04:19:13 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tesctlvkcingmcom' in 'where clause'
+[Method: POST, Route: register]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `api`
+WHERE `tesctlvkcingmcom` IS NULL
+ LIMIT 1', [], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\Register.php(13): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Register->signup()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\API\\public\\index.php')
+CRITICAL - 2024-10-10 04:19:13 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tesctlvkcingmcom' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `api`
+WHERE `tesctlvkcingmcom` IS NULL
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `api`
+WHERE `tesctlvkcingmcom` IS NULL
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `api`
+WHERE `tesctlvkcingmcom` IS NULL
+ LIMIT 1', [], false)
+ 4 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Controllers\Register.php(13): CodeIgniter\BaseModel->first()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Register->signup()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\API\\public\\index.php')
+CRITICAL - 2024-10-10 04:19:13 --> [Caused by] mysqli_sql_exception: Unknown column 'tesctlvkcingmcom' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `api`
+WHERE `tesctlvkcingmcom` IS NULL
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `api`
+WHERE `tesctlvkcingmcom` IS NULL
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `api`
+WHERE `tesctlvkcingmcom` IS NULL
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `api`
+WHERE `tesctlvkcingmcom` IS NULL
+ LIMIT 1', [], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\Register.php(13): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Register->signup()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\API\\public\\index.php')
+ERROR - 2024-10-10 04:19:15 --> mysqli_sql_exception: Unknown column 'tesctlvkcingmcom' in 'where clause' in D:\xampp\htdocs\API\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 D:\xampp\htdocs\API\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\API\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\API\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\API\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\API\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\API\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 D:\xampp\htdocs\API\app\Controllers\Register.php(13): CodeIgniter\BaseModel->first()
+#7 D:\xampp\htdocs\API\system\CodeIgniter.php(933): App\Controllers\Register->signup()
+#8 D:\xampp\htdocs\API\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#9 D:\xampp\htdocs\API\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\API\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\API\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\xampp\htdocs\API\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 D:\xampp\htdocs\API\system\rewrite.php(44): require_once('D:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2024-10-10 04:19:15 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tesctlvkcingmcom' in 'where clause'
+[Method: POST, Route: register]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `api`
+WHERE `tesctlvkcingmcom` IS NULL
+ LIMIT 1', [], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\Register.php(13): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Register->signup()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\API\\public\\index.php')
+CRITICAL - 2024-10-10 04:19:15 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tesctlvkcingmcom' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `api`
+WHERE `tesctlvkcingmcom` IS NULL
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `api`
+WHERE `tesctlvkcingmcom` IS NULL
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `api`
+WHERE `tesctlvkcingmcom` IS NULL
+ LIMIT 1', [], false)
+ 4 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Controllers\Register.php(13): CodeIgniter\BaseModel->first()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Register->signup()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\API\\public\\index.php')
+CRITICAL - 2024-10-10 04:19:15 --> [Caused by] mysqli_sql_exception: Unknown column 'tesctlvkcingmcom' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `api`
+WHERE `tesctlvkcingmcom` IS NULL
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `api`
+WHERE `tesctlvkcingmcom` IS NULL
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `api`
+WHERE `tesctlvkcingmcom` IS NULL
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `api`
+WHERE `tesctlvkcingmcom` IS NULL
+ LIMIT 1', [], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\Register.php(13): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Register->signup()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\API\\public\\index.php')
+ERROR - 2024-10-10 04:19:20 --> mysqli_sql_exception: Unknown column 'tesctlvkcivngmcom' in 'where clause' in D:\xampp\htdocs\API\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 D:\xampp\htdocs\API\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\API\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\API\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\API\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\API\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\API\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 D:\xampp\htdocs\API\app\Controllers\Register.php(13): CodeIgniter\BaseModel->first()
+#7 D:\xampp\htdocs\API\system\CodeIgniter.php(933): App\Controllers\Register->signup()
+#8 D:\xampp\htdocs\API\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#9 D:\xampp\htdocs\API\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\API\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\API\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\xampp\htdocs\API\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 D:\xampp\htdocs\API\system\rewrite.php(44): require_once('D:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2024-10-10 04:19:20 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tesctlvkcivngmcom' in 'where clause'
+[Method: POST, Route: register]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `api`
+WHERE `tesctlvkcivngmcom` IS NULL
+ LIMIT 1', [], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\Register.php(13): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Register->signup()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\API\\public\\index.php')
+CRITICAL - 2024-10-10 04:19:20 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tesctlvkcivngmcom' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `api`
+WHERE `tesctlvkcivngmcom` IS NULL
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `api`
+WHERE `tesctlvkcivngmcom` IS NULL
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `api`
+WHERE `tesctlvkcivngmcom` IS NULL
+ LIMIT 1', [], false)
+ 4 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Controllers\Register.php(13): CodeIgniter\BaseModel->first()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Register->signup()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\API\\public\\index.php')
+CRITICAL - 2024-10-10 04:19:20 --> [Caused by] mysqli_sql_exception: Unknown column 'tesctlvkcivngmcom' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `api`
+WHERE `tesctlvkcivngmcom` IS NULL
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `api`
+WHERE `tesctlvkcivngmcom` IS NULL
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `api`
+WHERE `tesctlvkcivngmcom` IS NULL
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `api`
+WHERE `tesctlvkcivngmcom` IS NULL
+ LIMIT 1', [], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\Register.php(13): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Register->signup()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\API\\public\\index.php')
+ERROR - 2024-10-10 04:19:25 --> mysqli_sql_exception: Unknown column 'tesctlvkcivngmcom' in 'where clause' in D:\xampp\htdocs\API\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 D:\xampp\htdocs\API\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\API\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\API\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\API\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\API\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\API\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 D:\xampp\htdocs\API\app\Controllers\Register.php(13): CodeIgniter\BaseModel->first()
+#7 D:\xampp\htdocs\API\system\CodeIgniter.php(933): App\Controllers\Register->signup()
+#8 D:\xampp\htdocs\API\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#9 D:\xampp\htdocs\API\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\API\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\API\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\xampp\htdocs\API\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 D:\xampp\htdocs\API\system\rewrite.php(44): require_once('D:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2024-10-10 04:19:25 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tesctlvkcivngmcom' in 'where clause'
+[Method: POST, Route: register]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `api`
+WHERE `tesctlvkcivngmcom` IS NULL
+ LIMIT 1', [], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\Register.php(13): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Register->signup()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\API\\public\\index.php')
+CRITICAL - 2024-10-10 04:19:25 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tesctlvkcivngmcom' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `api`
+WHERE `tesctlvkcivngmcom` IS NULL
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `api`
+WHERE `tesctlvkcivngmcom` IS NULL
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `api`
+WHERE `tesctlvkcivngmcom` IS NULL
+ LIMIT 1', [], false)
+ 4 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Controllers\Register.php(13): CodeIgniter\BaseModel->first()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Register->signup()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\API\\public\\index.php')
+CRITICAL - 2024-10-10 04:19:25 --> [Caused by] mysqli_sql_exception: Unknown column 'tesctlvkcivngmcom' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `api`
+WHERE `tesctlvkcivngmcom` IS NULL
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `api`
+WHERE `tesctlvkcivngmcom` IS NULL
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `api`
+WHERE `tesctlvkcivngmcom` IS NULL
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `api`
+WHERE `tesctlvkcivngmcom` IS NULL
+ LIMIT 1', [], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\Register.php(13): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Register->signup()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\API\\public\\index.php')
+ERROR - 2024-10-10 04:19:26 --> mysqli_sql_exception: Unknown column 'tesctlvkcivngmcom' in 'where clause' in D:\xampp\htdocs\API\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 D:\xampp\htdocs\API\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\API\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\API\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\API\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\API\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\API\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 D:\xampp\htdocs\API\app\Controllers\Register.php(13): CodeIgniter\BaseModel->first()
+#7 D:\xampp\htdocs\API\system\CodeIgniter.php(933): App\Controllers\Register->signup()
+#8 D:\xampp\htdocs\API\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#9 D:\xampp\htdocs\API\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\API\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\API\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\xampp\htdocs\API\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 D:\xampp\htdocs\API\system\rewrite.php(44): require_once('D:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2024-10-10 04:19:26 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tesctlvkcivngmcom' in 'where clause'
+[Method: POST, Route: register]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `api`
+WHERE `tesctlvkcivngmcom` IS NULL
+ LIMIT 1', [], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\Register.php(13): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Register->signup()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\API\\public\\index.php')
+CRITICAL - 2024-10-10 04:19:26 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tesctlvkcivngmcom' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `api`
+WHERE `tesctlvkcivngmcom` IS NULL
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `api`
+WHERE `tesctlvkcivngmcom` IS NULL
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `api`
+WHERE `tesctlvkcivngmcom` IS NULL
+ LIMIT 1', [], false)
+ 4 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Controllers\Register.php(13): CodeIgniter\BaseModel->first()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Register->signup()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\API\\public\\index.php')
+CRITICAL - 2024-10-10 04:19:26 --> [Caused by] mysqli_sql_exception: Unknown column 'tesctlvkcivngmcom' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `api`
+WHERE `tesctlvkcivngmcom` IS NULL
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `api`
+WHERE `tesctlvkcivngmcom` IS NULL
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `api`
+WHERE `tesctlvkcivngmcom` IS NULL
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `api`
+WHERE `tesctlvkcivngmcom` IS NULL
+ LIMIT 1', [], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\Register.php(13): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Register->signup()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\API\\public\\index.php')
+ERROR - 2024-10-10 04:19:31 --> mysqli_sql_exception: Unknown column 'tesctlvkcivngvmcom' in 'where clause' in D:\xampp\htdocs\API\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 D:\xampp\htdocs\API\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\API\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\API\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\API\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\API\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\API\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 D:\xampp\htdocs\API\app\Controllers\Register.php(13): CodeIgniter\BaseModel->first()
+#7 D:\xampp\htdocs\API\system\CodeIgniter.php(933): App\Controllers\Register->signup()
+#8 D:\xampp\htdocs\API\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#9 D:\xampp\htdocs\API\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\API\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\API\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\xampp\htdocs\API\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 D:\xampp\htdocs\API\system\rewrite.php(44): require_once('D:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2024-10-10 04:19:31 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tesctlvkcivngvmcom' in 'where clause'
+[Method: POST, Route: register]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `api`
+WHERE `tesctlvkcivngvmcom` IS NULL
+ LIMIT 1', [], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\Register.php(13): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Register->signup()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\API\\public\\index.php')
+CRITICAL - 2024-10-10 04:19:31 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tesctlvkcivngvmcom' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `api`
+WHERE `tesctlvkcivngvmcom` IS NULL
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `api`
+WHERE `tesctlvkcivngvmcom` IS NULL
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `api`
+WHERE `tesctlvkcivngvmcom` IS NULL
+ LIMIT 1', [], false)
+ 4 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Controllers\Register.php(13): CodeIgniter\BaseModel->first()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Register->signup()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\API\\public\\index.php')
+CRITICAL - 2024-10-10 04:19:31 --> [Caused by] mysqli_sql_exception: Unknown column 'tesctlvkcivngvmcom' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `api`
+WHERE `tesctlvkcivngvmcom` IS NULL
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `api`
+WHERE `tesctlvkcivngvmcom` IS NULL
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `api`
+WHERE `tesctlvkcivngvmcom` IS NULL
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `api`
+WHERE `tesctlvkcivngvmcom` IS NULL
+ LIMIT 1', [], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\Register.php(13): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Register->signup()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\API\\public\\index.php')
+ERROR - 2024-10-10 04:19:38 --> mysqli_sql_exception: Unknown column 'tesctlvkcivngvmcom' in 'where clause' in D:\xampp\htdocs\API\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 D:\xampp\htdocs\API\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\API\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\API\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\API\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\API\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\API\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 D:\xampp\htdocs\API\app\Controllers\Register.php(13): CodeIgniter\BaseModel->first()
+#7 D:\xampp\htdocs\API\system\CodeIgniter.php(933): App\Controllers\Register->signup()
+#8 D:\xampp\htdocs\API\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#9 D:\xampp\htdocs\API\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\API\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\API\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\xampp\htdocs\API\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 D:\xampp\htdocs\API\system\rewrite.php(44): require_once('D:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2024-10-10 04:19:38 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tesctlvkcivngvmcom' in 'where clause'
+[Method: POST, Route: register]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `api`
+WHERE `tesctlvkcivngvmcom` IS NULL
+ LIMIT 1', [], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\Register.php(13): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Register->signup()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\API\\public\\index.php')
+CRITICAL - 2024-10-10 04:19:38 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tesctlvkcivngvmcom' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `api`
+WHERE `tesctlvkcivngvmcom` IS NULL
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `api`
+WHERE `tesctlvkcivngvmcom` IS NULL
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `api`
+WHERE `tesctlvkcivngvmcom` IS NULL
+ LIMIT 1', [], false)
+ 4 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Controllers\Register.php(13): CodeIgniter\BaseModel->first()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Register->signup()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\API\\public\\index.php')
+CRITICAL - 2024-10-10 04:19:38 --> [Caused by] mysqli_sql_exception: Unknown column 'tesctlvkcivngvmcom' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `api`
+WHERE `tesctlvkcivngvmcom` IS NULL
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `api`
+WHERE `tesctlvkcivngvmcom` IS NULL
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `api`
+WHERE `tesctlvkcivngvmcom` IS NULL
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `api`
+WHERE `tesctlvkcivngvmcom` IS NULL
+ LIMIT 1', [], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\Register.php(13): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Register->signup()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\API\\public\\index.php')
+ERROR - 2024-10-10 04:20:28 --> mysqli_sql_exception: Unknown column 'tesctlvkcivngvmcom' in 'where clause' in D:\xampp\htdocs\API\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 D:\xampp\htdocs\API\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\API\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\API\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\API\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\API\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\API\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 D:\xampp\htdocs\API\app\Controllers\Register.php(13): CodeIgniter\BaseModel->first()
+#7 D:\xampp\htdocs\API\system\CodeIgniter.php(933): App\Controllers\Register->signup()
+#8 D:\xampp\htdocs\API\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#9 D:\xampp\htdocs\API\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\API\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\API\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\xampp\htdocs\API\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 D:\xampp\htdocs\API\system\rewrite.php(44): require_once('D:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2024-10-10 04:20:28 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tesctlvkcivngvmcom' in 'where clause'
+[Method: POST, Route: register]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `api`
+WHERE `tesctlvkcivngvmcom` IS NULL
+ LIMIT 1', [], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\Register.php(13): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Register->signup()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\API\\public\\index.php')
+CRITICAL - 2024-10-10 04:20:28 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tesctlvkcivngvmcom' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `api`
+WHERE `tesctlvkcivngvmcom` IS NULL
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `api`
+WHERE `tesctlvkcivngvmcom` IS NULL
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `api`
+WHERE `tesctlvkcivngvmcom` IS NULL
+ LIMIT 1', [], false)
+ 4 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Controllers\Register.php(13): CodeIgniter\BaseModel->first()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Register->signup()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\API\\public\\index.php')
+CRITICAL - 2024-10-10 04:20:28 --> [Caused by] mysqli_sql_exception: Unknown column 'tesctlvkcivngvmcom' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `api`
+WHERE `tesctlvkcivngvmcom` IS NULL
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `api`
+WHERE `tesctlvkcivngvmcom` IS NULL
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `api`
+WHERE `tesctlvkcivngvmcom` IS NULL
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `api`
+WHERE `tesctlvkcivngvmcom` IS NULL
+ LIMIT 1', [], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\Register.php(13): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Register->signup()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\API\\public\\index.php')
+ERROR - 2024-10-10 04:20:33 --> mysqli_sql_exception: Unknown column 'tesctlvkhjscivngvmcom' in 'where clause' in D:\xampp\htdocs\API\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 D:\xampp\htdocs\API\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\API\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\API\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\API\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\API\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\API\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 D:\xampp\htdocs\API\app\Controllers\Register.php(13): CodeIgniter\BaseModel->first()
+#7 D:\xampp\htdocs\API\system\CodeIgniter.php(933): App\Controllers\Register->signup()
+#8 D:\xampp\htdocs\API\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#9 D:\xampp\htdocs\API\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\API\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\API\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\xampp\htdocs\API\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 D:\xampp\htdocs\API\system\rewrite.php(44): require_once('D:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2024-10-10 04:20:33 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tesctlvkhjscivngvmcom' in 'where clause'
+[Method: POST, Route: register]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `api`
+WHERE `tesctlvkhjscivngvmcom` IS NULL
+ LIMIT 1', [], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\Register.php(13): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Register->signup()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\API\\public\\index.php')
+CRITICAL - 2024-10-10 04:20:33 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tesctlvkhjscivngvmcom' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `api`
+WHERE `tesctlvkhjscivngvmcom` IS NULL
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `api`
+WHERE `tesctlvkhjscivngvmcom` IS NULL
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `api`
+WHERE `tesctlvkhjscivngvmcom` IS NULL
+ LIMIT 1', [], false)
+ 4 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Controllers\Register.php(13): CodeIgniter\BaseModel->first()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Register->signup()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\API\\public\\index.php')
+CRITICAL - 2024-10-10 04:20:33 --> [Caused by] mysqli_sql_exception: Unknown column 'tesctlvkhjscivngvmcom' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `api`
+WHERE `tesctlvkhjscivngvmcom` IS NULL
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `api`
+WHERE `tesctlvkhjscivngvmcom` IS NULL
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `api`
+WHERE `tesctlvkhjscivngvmcom` IS NULL
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `api`
+WHERE `tesctlvkhjscivngvmcom` IS NULL
+ LIMIT 1', [], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\Register.php(13): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Register->signup()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\API\\public\\index.php')
+ERROR - 2024-10-10 04:21:12 --> mysqli_sql_exception: Duplicate entry 'bhavvvvhjscvnmcvkjvvya' for key 'username' in D:\xampp\htdocs\API\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 D:\xampp\htdocs\API\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ap...', 0)
+#1 D:\xampp\htdocs\API\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ap...')
+#2 D:\xampp\htdocs\API\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ap...')
+#3 D:\xampp\htdocs\API\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ap...', Array, false)
+#4 D:\xampp\htdocs\API\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\xampp\htdocs\API\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 D:\xampp\htdocs\API\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\xampp\htdocs\API\app\Controllers\Register.php(18): CodeIgniter\Model->insert(Array)
+#8 D:\xampp\htdocs\API\system\CodeIgniter.php(933): App\Controllers\Register->signup()
+#9 D:\xampp\htdocs\API\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#10 D:\xampp\htdocs\API\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\API\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\API\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp\htdocs\API\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 D:\xampp\htdocs\API\system\rewrite.php(44): require_once('D:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2024-10-10 04:21:12 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'bhavvvvhjscvnmcvkjvvya' for key 'username'
+[Method: POST, Route: register]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `api` (`username`, `password`, `email`) VALUES (:username:, :password:, :email:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Register.php(18): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Register->signup()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\API\\public\\index.php')
+CRITICAL - 2024-10-10 04:21:12 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'bhavvvvhjscvnmcvkjvvya' for key 'username'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `api` (`username`, `password`, `email`) VALUES (\'bhavvvvhjscvnmcvkjvvya\', \'12cvlknv3v4v5\', \'tesctlvkhjscivngvmcom\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `api` (`username`, `password`, `email`) VALUES (\'bhavvvvhjscvnmcvkjvvya\', \'12cvlknv3v4v5\', \'tesctlvkhjscivngvmcom\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `api` (`username`, `password`, `email`) VALUES (:username:, :password:, :email:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Register.php(18): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Register->signup()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\API\\public\\index.php')
+CRITICAL - 2024-10-10 04:21:12 --> [Caused by] mysqli_sql_exception: Duplicate entry 'bhavvvvhjscvnmcvkjvvya' for key 'username'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `api` (`username`, `password`, `email`) VALUES (\'bhavvvvhjscvnmcvkjvvya\', \'12cvlknv3v4v5\', \'tesctlvkhjscivngvmcom\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `api` (`username`, `password`, `email`) VALUES (\'bhavvvvhjscvnmcvkjvvya\', \'12cvlknv3v4v5\', \'tesctlvkhjscivngvmcom\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `api` (`username`, `password`, `email`) VALUES (\'bhavvvvhjscvnmcvkjvvya\', \'12cvlknv3v4v5\', \'tesctlvkhjscivngvmcom\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `api` (`username`, `password`, `email`) VALUES (:username:, :password:, :email:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Register.php(18): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Register->signup()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\API\\public\\index.php')
+CRITICAL - 2024-10-10 05:16:02 --> ErrorException: Trying to access array offset on value of type null
+[Method: POST, Route: register]
+in APPPATH\Controllers\Register.php on line 17.
+ 1 APPPATH\Controllers\Register.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'D:\\xampp\\htdocs\\API\\app\\Controllers\\Register.php', 17)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Register->signup()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\API\\public\\index.php')
+CRITICAL - 2024-10-10 05:30:12 --> ErrorException: Undefined variable $rotes
+[Method: POST, Route: register]
+in APPPATH\Config\Routes.php on line 11.
+ 1 APPPATH\Config\Routes.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $rotes', 'D:\\xampp\\htdocs\\API\\app\\Config\\Routes.php', 11)
+ 2 SYSTEMPATH\Router\RouteCollection.php(340): require('D:\\xampp\\htdocs\\API\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\API\\public\\index.php')
+CRITICAL - 2024-10-10 05:30:32 --> ErrorException: Undefined variable $rotes
+[Method: POST, Route: register]
+in APPPATH\Config\Routes.php on line 11.
+ 1 APPPATH\Config\Routes.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $rotes', 'D:\\xampp\\htdocs\\API\\app\\Config\\Routes.php', 11)
+ 2 SYSTEMPATH\Router\RouteCollection.php(340): require('D:\\xampp\\htdocs\\API\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\API\\public\\index.php')
+CRITICAL - 2024-10-10 05:30:33 --> ErrorException: Undefined variable $rotes
+[Method: POST, Route: register]
+in APPPATH\Config\Routes.php on line 11.
+ 1 APPPATH\Config\Routes.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $rotes', 'D:\\xampp\\htdocs\\API\\app\\Config\\Routes.php', 11)
+ 2 SYSTEMPATH\Router\RouteCollection.php(340): require('D:\\xampp\\htdocs\\API\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\API\\public\\index.php')
+CRITICAL - 2024-10-10 05:30:45 --> ErrorException: Undefined variable $rotes
+[Method: POST, Route: register]
+in APPPATH\Config\Routes.php on line 11.
+ 1 APPPATH\Config\Routes.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $rotes', 'D:\\xampp\\htdocs\\API\\app\\Config\\Routes.php', 11)
+ 2 SYSTEMPATH\Router\RouteCollection.php(340): require('D:\\xampp\\htdocs\\API\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\API\\public\\index.php')
+CRITICAL - 2024-10-10 05:32:47 --> ErrorException: Undefined variable $rotes
+[Method: POST, Route: register]
+in APPPATH\Config\Routes.php on line 11.
+ 1 APPPATH\Config\Routes.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $rotes', 'D:\\xampp\\htdocs\\API\\app\\Config\\Routes.php', 11)
+ 2 SYSTEMPATH\Router\RouteCollection.php(340): require('D:\\xampp\\htdocs\\API\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\API\\public\\index.php')
+CRITICAL - 2024-10-10 05:33:02 --> ErrorException: Undefined variable $rotes
+[Method: POST, Route: register]
+in APPPATH\Config\Routes.php on line 11.
+ 1 APPPATH\Config\Routes.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $rotes', 'D:\\xampp\\htdocs\\API\\app\\Config\\Routes.php', 11)
+ 2 SYSTEMPATH\Router\RouteCollection.php(340): require('D:\\xampp\\htdocs\\API\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\API\\public\\index.php')
+CRITICAL - 2024-10-10 05:33:06 --> ErrorException: Undefined variable $rotes
+[Method: GET, Route: register]
+in APPPATH\Config\Routes.php on line 11.
+ 1 APPPATH\Config\Routes.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $rotes', 'D:\\xampp\\htdocs\\API\\app\\Config\\Routes.php', 11)
+ 2 SYSTEMPATH\Router\RouteCollection.php(340): require('D:\\xampp\\htdocs\\API\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\API\\public\\index.php')
+CRITICAL - 2024-10-10 05:33:14 --> ErrorException: Undefined variable $rotes
+[Method: POST, Route: register]
+in APPPATH\Config\Routes.php on line 11.
+ 1 APPPATH\Config\Routes.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $rotes', 'D:\\xampp\\htdocs\\API\\app\\Config\\Routes.php', 11)
+ 2 SYSTEMPATH\Router\RouteCollection.php(340): require('D:\\xampp\\htdocs\\API\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\API\\public\\index.php')
+CRITICAL - 2024-10-10 05:33:35 --> ErrorException: Undefined variable $rotes
+[Method: POST, Route: register]
+in APPPATH\Config\Routes.php on line 11.
+ 1 APPPATH\Config\Routes.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $rotes', 'D:\\xampp\\htdocs\\API\\app\\Config\\Routes.php', 11)
+ 2 SYSTEMPATH\Router\RouteCollection.php(340): require('D:\\xampp\\htdocs\\API\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\API\\public\\index.php')
+CRITICAL - 2024-10-10 05:34:52 --> ErrorException: Undefined variable $rotes
+[Method: POST, Route: register]
+in APPPATH\Config\Routes.php on line 11.
+ 1 APPPATH\Config\Routes.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $rotes', 'D:\\xampp\\htdocs\\API\\app\\Config\\Routes.php', 11)
+ 2 SYSTEMPATH\Router\RouteCollection.php(340): require('D:\\xampp\\htdocs\\API\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\API\\public\\index.php')
+CRITICAL - 2024-10-10 05:35:10 --> ErrorException: Undefined variable $rotes
+[Method: POST, Route: register]
+in APPPATH\Config\Routes.php on line 11.
+ 1 APPPATH\Config\Routes.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $rotes', 'D:\\xampp\\htdocs\\API\\app\\Config\\Routes.php', 11)
+ 2 SYSTEMPATH\Router\RouteCollection.php(340): require('D:\\xampp\\htdocs\\API\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\API\\public\\index.php')
+CRITICAL - 2024-10-10 05:35:15 --> ErrorException: Undefined variable $rotes
+[Method: POST, Route: register]
+in APPPATH\Config\Routes.php on line 11.
+ 1 APPPATH\Config\Routes.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $rotes', 'D:\\xampp\\htdocs\\API\\app\\Config\\Routes.php', 11)
+ 2 SYSTEMPATH\Router\RouteCollection.php(340): require('D:\\xampp\\htdocs\\API\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\API\\public\\index.php')
+CRITICAL - 2024-10-10 05:37:03 --> ErrorException: Undefined variable $rotes
+[Method: POST, Route: register]
+in APPPATH\Config\Routes.php on line 11.
+ 1 APPPATH\Config\Routes.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $rotes', 'D:\\xampp\\htdocs\\API\\app\\Config\\Routes.php', 11)
+ 2 SYSTEMPATH\Router\RouteCollection.php(340): require('D:\\xampp\\htdocs\\API\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\API\\public\\index.php')
+CRITICAL - 2024-10-10 05:37:08 --> ErrorException: Undefined variable $rotes
+[Method: POST, Route: register]
+in APPPATH\Config\Routes.php on line 11.
+ 1 APPPATH\Config\Routes.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $rotes', 'D:\\xampp\\htdocs\\API\\app\\Config\\Routes.php', 11)
+ 2 SYSTEMPATH\Router\RouteCollection.php(340): require('D:\\xampp\\htdocs\\API\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\API\\public\\index.php')
+CRITICAL - 2024-10-10 05:37:12 --> ErrorException: Undefined variable $rotes
+[Method: POST, Route: register]
+in APPPATH\Config\Routes.php on line 11.
+ 1 APPPATH\Config\Routes.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $rotes', 'D:\\xampp\\htdocs\\API\\app\\Config\\Routes.php', 11)
+ 2 SYSTEMPATH\Router\RouteCollection.php(340): require('D:\\xampp\\htdocs\\API\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\API\\public\\index.php')
+CRITICAL - 2024-10-10 05:37:16 --> ErrorException: Undefined variable $rotes
+[Method: POST, Route: register]
+in APPPATH\Config\Routes.php on line 11.
+ 1 APPPATH\Config\Routes.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $rotes', 'D:\\xampp\\htdocs\\API\\app\\Config\\Routes.php', 11)
+ 2 SYSTEMPATH\Router\RouteCollection.php(340): require('D:\\xampp\\htdocs\\API\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\API\\public\\index.php')
+CRITICAL - 2024-10-10 05:38:15 --> ErrorException: Undefined variable $rotes
+[Method: POST, Route: register]
+in APPPATH\Config\Routes.php on line 11.
+ 1 APPPATH\Config\Routes.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $rotes', 'D:\\xampp\\htdocs\\API\\app\\Config\\Routes.php', 11)
+ 2 SYSTEMPATH\Router\RouteCollection.php(340): require('D:\\xampp\\htdocs\\API\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\API\\public\\index.php')
+CRITICAL - 2024-10-10 05:41:10 --> ErrorException: Undefined variable $rotes
+[Method: POST, Route: register]
+in APPPATH\Config\Routes.php on line 11.
+ 1 APPPATH\Config\Routes.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $rotes', 'D:\\xampp\\htdocs\\API\\app\\Config\\Routes.php', 11)
+ 2 SYSTEMPATH\Router\RouteCollection.php(340): require('D:\\xampp\\htdocs\\API\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\API\\public\\index.php')
+CRITICAL - 2024-10-10 05:42:29 --> ErrorException: Undefined variable $rotes
+[Method: POST, Route: register]
+in APPPATH\Config\Routes.php on line 11.
+ 1 APPPATH\Config\Routes.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $rotes', 'D:\\xampp\\htdocs\\API\\app\\Config\\Routes.php', 11)
+ 2 SYSTEMPATH\Router\RouteCollection.php(340): require('D:\\xampp\\htdocs\\API\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\API\\public\\index.php')
+CRITICAL - 2024-10-10 05:43:55 --> ErrorException: Undefined variable $rotes
+[Method: POST, Route: register]
+in APPPATH\Config\Routes.php on line 11.
+ 1 APPPATH\Config\Routes.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $rotes', 'D:\\xampp\\htdocs\\API\\app\\Config\\Routes.php', 11)
+ 2 SYSTEMPATH\Router\RouteCollection.php(340): require('D:\\xampp\\htdocs\\API\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\API\\public\\index.php')
+CRITICAL - 2024-10-10 05:45:08 --> ErrorException: Undefined variable $rotes
+[Method: POST, Route: register]
+in APPPATH\Config\Routes.php on line 11.
+ 1 APPPATH\Config\Routes.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $rotes', 'D:\\xampp\\htdocs\\API\\app\\Config\\Routes.php', 11)
+ 2 SYSTEMPATH\Router\RouteCollection.php(340): require('D:\\xampp\\htdocs\\API\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\API\\public\\index.php')
+CRITICAL - 2024-10-10 05:45:53 --> ErrorException: Undefined variable $rotes
+[Method: POST, Route: register]
+in APPPATH\Config\Routes.php on line 11.
+ 1 APPPATH\Config\Routes.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $rotes', 'D:\\xampp\\htdocs\\API\\app\\Config\\Routes.php', 11)
+ 2 SYSTEMPATH\Router\RouteCollection.php(340): require('D:\\xampp\\htdocs\\API\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\API\\public\\index.php')
+CRITICAL - 2024-10-10 05:46:20 --> ErrorException: Undefined variable $rotes
+[Method: POST, Route: register]
+in APPPATH\Config\Routes.php on line 11.
+ 1 APPPATH\Config\Routes.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $rotes', 'D:\\xampp\\htdocs\\API\\app\\Config\\Routes.php', 11)
+ 2 SYSTEMPATH\Router\RouteCollection.php(340): require('D:\\xampp\\htdocs\\API\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\API\\public\\index.php')
+CRITICAL - 2024-10-10 05:46:25 --> ErrorException: Undefined variable $rotes
+[Method: POST, Route: register]
+in APPPATH\Config\Routes.php on line 11.
+ 1 APPPATH\Config\Routes.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $rotes', 'D:\\xampp\\htdocs\\API\\app\\Config\\Routes.php', 11)
+ 2 SYSTEMPATH\Router\RouteCollection.php(340): require('D:\\xampp\\htdocs\\API\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\API\\public\\index.php')
+CRITICAL - 2024-10-10 05:46:41 --> Error: Call to a member function setJSON() on null
+[Method: POST, Route: register]
+in APPPATH\Controllers\Validation.php on line 33.
+ 1 APPPATH\Controllers\Register.php(14): App\Controllers\Validation->check('xxxxx', 'sadminshipglobalin', 'dkjkcxvm')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Register->signup()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\API\\public\\index.php')
+CRITICAL - 2024-10-10 05:49:38 --> Error: Call to a member function setJSON() on null
+[Method: POST, Route: register]
+in APPPATH\Controllers\Validation.php on line 27.
+ 1 APPPATH\Controllers\Register.php(20): App\Controllers\Validation->check('xxxxx', 'sadminshipglobalin', 'dkjkcxvm')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Register->signup()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\API\\public\\index.php')
+CRITICAL - 2024-10-10 05:50:32 --> ErrorException: Undefined variable $userModel
+[Method: POST, Route: register]
+in APPPATH\Controllers\Register.php on line 14.
+ 1 APPPATH\Controllers\Register.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userModel', 'D:\\xampp\\htdocs\\API\\app\\Controllers\\Register.php', 14)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Register->signup()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\API\\public\\index.php')
+CRITICAL - 2024-10-10 05:50:42 --> ErrorException: Undefined variable $userModel
+[Method: POST, Route: register]
+in APPPATH\Controllers\Register.php on line 14.
+ 1 APPPATH\Controllers\Register.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userModel', 'D:\\xampp\\htdocs\\API\\app\\Controllers\\Register.php', 14)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Register->signup()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\API\\public\\index.php')
+CRITICAL - 2024-10-10 05:50:46 --> ErrorException: Undefined variable $userModel
+[Method: POST, Route: register]
+in APPPATH\Controllers\Register.php on line 14.
+ 1 APPPATH\Controllers\Register.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userModel', 'D:\\xampp\\htdocs\\API\\app\\Controllers\\Register.php', 14)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Register->signup()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\API\\public\\index.php')
+CRITICAL - 2024-10-10 05:51:11 --> ErrorException: Trying to access array offset on value of type null
+[Method: POST, Route: login]
+in APPPATH\Controllers\Login.php on line 13.
+ 1 APPPATH\Controllers\Login.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'D:\\xampp\\htdocs\\API\\app\\Controllers\\Login.php', 13)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\API\\public\\index.php')
+CRITICAL - 2024-10-10 05:51:14 --> ErrorException: Trying to access array offset on value of type null
+[Method: POST, Route: login]
+in APPPATH\Controllers\Login.php on line 13.
+ 1 APPPATH\Controllers\Login.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'D:\\xampp\\htdocs\\API\\app\\Controllers\\Login.php', 13)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\API\\public\\index.php')
+CRITICAL - 2024-10-10 05:51:18 --> ErrorException: Trying to access array offset on value of type null
+[Method: POST, Route: login]
+in APPPATH\Controllers\Login.php on line 13.
+ 1 APPPATH\Controllers\Login.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'D:\\xampp\\htdocs\\API\\app\\Controllers\\Login.php', 13)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\API\\public\\index.php')
+CRITICAL - 2024-10-10 05:53:07 --> ErrorException: Undefined variable $userModel
+[Method: POST, Route: register]
+in APPPATH\Controllers\Register.php on line 15.
+ 1 APPPATH\Controllers\Register.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userModel', 'D:\\xampp\\htdocs\\API\\app\\Controllers\\Register.php', 15)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Register->signup()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\API\\public\\index.php')
+CRITICAL - 2024-10-10 05:53:23 --> ErrorException: Undefined variable $userModel
+[Method: POST, Route: register]
+in APPPATH\Controllers\Register.php on line 15.
+ 1 APPPATH\Controllers\Register.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userModel', 'D:\\xampp\\htdocs\\API\\app\\Controllers\\Register.php', 15)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Register->signup()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\API\\public\\index.php')
+CRITICAL - 2024-10-10 06:14:15 --> ParseError: syntax error, unexpected token "}"
+[Method: POST, Route: register]
+in APPPATH\Controllers\Register.php on line 52.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\xampp\\htdocs\\API\\app\\Controllers\\Register.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Register')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Register')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Register', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\API\\public\\index.php')
+CRITICAL - 2024-10-10 06:25:18 --> Error: Call to a member function getPost() on null
+[Method: GET, Route: Validation]
+in APPPATH\Controllers\Validation.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Validation->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\API\\public\\index.php')
+CRITICAL - 2024-10-10 06:32:50 --> ParseError: syntax error, unexpected token "if"
+[Method: POST, Route: register]
+in APPPATH\Controllers\Register.php on line 20.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\xampp\\htdocs\\API\\app\\Controllers\\Register.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Register')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Register')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Register', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\API\\public\\index.php')
+ERROR - 2024-10-10 06:40:48 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\xampp\htdocs\API\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 D:\xampp\htdocs\API\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'ci', 3306, '', 0)
+#1 D:\xampp\htdocs\API\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\API\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\API\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\API\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\API\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 D:\xampp\htdocs\API\app\Controllers\Register.php(20): CodeIgniter\BaseModel->first()
+#7 D:\xampp\htdocs\API\system\CodeIgniter.php(933): App\Controllers\Register->signup()
+#8 D:\xampp\htdocs\API\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#9 D:\xampp\htdocs\API\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\API\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\API\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\xampp\htdocs\API\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 D:\xampp\htdocs\API\system\rewrite.php(44): require_once('D:\\xampp\\htdocs...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\xampp\htdocs\API\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 D:\xampp\htdocs\API\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\API\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\API\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\xampp\htdocs\API\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp\htdocs\API\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#5 D:\xampp\htdocs\API\app\Controllers\Register.php(20): CodeIgniter\BaseModel->first()
+#6 D:\xampp\htdocs\API\system\CodeIgniter.php(933): App\Controllers\Register->signup()
+#7 D:\xampp\htdocs\API\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#8 D:\xampp\htdocs\API\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\API\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\htdocs\API\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\xampp\htdocs\API\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\xampp\htdocs\API\system\rewrite.php(44): require_once('D:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-10-10 06:40:48 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: POST, Route: register]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `api`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Register.php(20): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Register->signup()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\API\\public\\index.php')
+ERROR - 2024-10-10 06:42:59 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\xampp\htdocs\API\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 D:\xampp\htdocs\API\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'ci', 3306, '', 0)
+#1 D:\xampp\htdocs\API\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\API\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\API\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\API\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\API\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 D:\xampp\htdocs\API\app\Controllers\Register.php(20): CodeIgniter\BaseModel->first()
+#7 D:\xampp\htdocs\API\system\CodeIgniter.php(933): App\Controllers\Register->signup()
+#8 D:\xampp\htdocs\API\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#9 D:\xampp\htdocs\API\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\API\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\API\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\xampp\htdocs\API\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 D:\xampp\htdocs\API\system\rewrite.php(44): require_once('D:\\xampp\\htdocs...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\xampp\htdocs\API\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 D:\xampp\htdocs\API\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\API\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\API\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\xampp\htdocs\API\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp\htdocs\API\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#5 D:\xampp\htdocs\API\app\Controllers\Register.php(20): CodeIgniter\BaseModel->first()
+#6 D:\xampp\htdocs\API\system\CodeIgniter.php(933): App\Controllers\Register->signup()
+#7 D:\xampp\htdocs\API\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#8 D:\xampp\htdocs\API\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\API\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\htdocs\API\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\xampp\htdocs\API\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\xampp\htdocs\API\system\rewrite.php(44): require_once('D:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-10-10 06:42:59 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: POST, Route: register]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `api`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Register.php(20): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Register->signup()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\API\\public\\index.php')
