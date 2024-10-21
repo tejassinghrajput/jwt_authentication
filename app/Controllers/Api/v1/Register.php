@@ -1,5 +1,6 @@
 <?php
 namespace App\Controllers\Api\v1;
+
 use App\Models\UserModel;
 use CodeIgniter\Controller;
 use App\Controllers\Api\v1\Validation;
@@ -21,7 +22,7 @@ class Register extends Controller {
         if ($validationResult['status'] === Constants::STATUS_FAIL) {
             return $this->response->setJSON($validationResult);
         }
-        // checking if email or username entered are already associated with another user.
+        // checking if email or username entered are already associated with another user
         $checkemail = $userModel->getUserByEmail($email);
         $checkuser = $userModel->getUserByUsername($username);
         if ($checkemail || $checkuser) {
@@ -35,7 +36,7 @@ class Register extends Controller {
             'email' => $email,
             'name' => $name
         ];
-        // Instering the details into Database.
+        // Inserting the details into Database
         $query = $userModel->saveUser($inserting);
         if ($query) {
             $data['status'] = Constants::STATUS_SUCCESS;
